@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Buscador</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <script type="text/javascript" src="jquery.min.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+        <style>
+            body{
+                text-align: center;
+            }
+            
+            section{
+                margin: auto;
+                text-align: center;
+            }
+            input{
+                padding: 1%;
+            }
+            button{
+                background: white;
+                border: solid 1px black;
+                padding: 1%;
+            }
+            button:hover{
+                border: solid 1px cornflowerblue;
+            }
+            #datos{
+                margin: 5px auto;
+                width: 80%;
+                padding: 1%;
+                /*text-align: left;*/
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>Buscador de Juegos</h1>
+        <section>
+            <div>
+                <input id="nombre" placeholder="nombre del juego" autofocus required>
+                <button id="buscar" type="submit">Buscar</button>
+            </div>
+            <div id="datos"></div>
+            <div id="aviso"></div>
+        </section>
+        
+    </body>
+</html>
